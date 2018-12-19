@@ -9,3 +9,11 @@ const result = float.filter(function(x) {
   }
 });
 console.log(result);
+
+// AVEC ARROW FUNCTION
+// Créez un tableau de 5 nombres flottant (à virgule)
+const float = [-1.4, 3.2, -2.9, -6.8, 5.5];
+// Retournez un tableau qui ne contient que les valeurs
+// dont la partie entière est négative et supérieure à -5
+const result = float.filter(x => parseInt(x) < 0 && parseInt(x) > -5);
+console.log(result);

@@ -17,3 +17,19 @@ const stringEven = string.split('').reduce(function(acc, car, index, myArray) {
   return index % 2 === 0 ? acc + car : acc;
 }, '');
 console.log(stringEven);
+
+// AVEC ARROW FUNCTION
+// Ecrivez une fonction qui étant donné un tableau de n nombres
+// retourne le plus grand.
+const numbers = [10, 2, 3, 12, 5, 8];
+const isHigher = numbers.reduce((acc, num) => (acc < num ? num : acc), 0);
+console.log(isHigher);
+
+// Ecrivez une fonction qui étant donné une chaîne de caractère
+// retourne cette même chaîne de caractère composée uniquement
+// des lettres en position paire.
+const string = 'Adeline';
+const stringEvenLetters = string
+  .split('')
+  .reduce((acc, letter, index) => (index % 2 === 0 ? acc + letter : acc), '');
+console.log(stringEvenLetters);

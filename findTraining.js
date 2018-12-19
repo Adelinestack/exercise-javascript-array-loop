@@ -8,3 +8,11 @@ const result = userNames.find(function(name) {
   }
 });
 console.log(result);
+
+// AVEC ARROW FUNCTION
+// Dans la variable userNames stockez 5 noms de user
+const userNames = ['Adeline', 'Axelle', 'Bernard', 'Nahla', 'Betty'];
+
+// Cherchez dans ce tableau le premier qui commence par ‘Be’
+const result = userNames.find(name => name.indexOf('Be') > -1);
+console.log(result);
